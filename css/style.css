@@ -234,6 +234,14 @@ footer ul li p {
 		background: linear-gradient(to top, #fff, rgba(255,255,255,.0));
 	}
 
+	.banner .col-md-9 .content-wrapper .item {
+		padding: 35px 15px !important;
+	}
+
+	.btn-custom {
+		font-size: 12px;
+	}
+
 	.artikel .artikel-item .text {
 		width: 100% !important;
 		z-index: 2;
@@ -243,5 +251,9 @@ footer ul li p {
 
 	h3 {
 		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 30px;
 	}
 }
