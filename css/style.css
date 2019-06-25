@@ -49,6 +49,7 @@ a:hover {
 	height: 100%;
 	display: block;
 	background: rgba(255,255,255,.2);
+	padding: 60px 0;
 }
 
 .sidebar {
