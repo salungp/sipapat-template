@@ -12,6 +12,32 @@ li, a, p, label {
 	color: #333;
 }
 
+@media (min-width: 786px;) {
+	a.nav-link {
+		color: #333 !important;
+		position: relative;
+	}
+
+	a.nav-link::before {
+		content: '';
+		position: absolute;
+		bottom: 5px;
+		width: 50%;
+		height: 3px;
+		left: 25%;
+		border-radius: 30px;
+		background: #1abc9c;
+		transform: scaleX(0);
+		transition: .3s ease;
+	}
+
+	a.nav-link:hover::before,
+	a.active
+	 {
+		transform: scaleX(1) !important;
+	}
+}
+
 nav.navbar {
 	box-shadow: 0 3px 4px rgba(0,0,0,.1);
 	background: #fff;
@@ -150,6 +176,14 @@ footer ul li p {
 	height: 180px;
 }
 
+.form-inline .input-btn {
+	width: 100%;
+}
+
+.form-inline .input-btn input {
+	width: 100%;
+}
+
 .input-btn button:hover {
 	background: #16a085;
 }
@@ -180,8 +214,31 @@ footer ul li p {
 		padding-left: 30px;
 	}
 
+	.artikel .artikel-item {
+		position: relative;
+	}
+
 	.artikel .artikel-item .artikel-image {
-		height: 130px;
+		width: 100% !important;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+	}
+
+	.artikel .artikel-item .artikel-image::before {
+		content: '';
+		width: 100%;
+		height: 50%;
+		bottom: 0;
+		position: absolute;
+		background: linear-gradient(to top, #fff, rgba(255,255,255,.0));
+	}
+
+	.artikel .artikel-item .text {
+		width: 100% !important;
+		z-index: 2;
+		padding: 20px;
+		margin-top: 50px;
 	}
 
 	h3 {
